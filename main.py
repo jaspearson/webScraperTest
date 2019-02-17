@@ -1,8 +1,8 @@
 from classes.walmartScraper import Walmart
 import json
 
-# Get Presidents day deals
-extracted_records = Walmart().get_deals('kitten')
+# Get deals
+extracted_records = Walmart().get_deals('TV')
 
 # Save results to a json file
 with open('products.json', 'w') as outfile:
