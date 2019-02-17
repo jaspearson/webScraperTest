@@ -79,7 +79,7 @@ class Walmart():
                 record = {
                     'title': title.text,
                     'price': price.text,
-                    'url': "http://walmart.com" + url.text
+                    'url': "http://walmart.com" + url.get("href")
                 }
 
                 # Append each new product and attributes to the dictionary object
