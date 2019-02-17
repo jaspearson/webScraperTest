@@ -75,10 +75,6 @@ class Walmart():
 
             if title != None and price != None and url != None:
 
-                #title = product.find("a", class_="product-title-link").text
-                #price = product.find("div", class_="search-result-productprice gridview enable-2price-2").text
-                #url =  + product.find("a", class_="product-title-link").get('href')
-
                 print("%s - %s" % (title.text, price.text))
                 record = {
                     'title': title.text,
